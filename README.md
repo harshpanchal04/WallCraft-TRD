@@ -41,22 +41,34 @@
 3. To ensure only visible portions of the walls are covered by the texture, implement culling techniques (using backface culling discard polygons facing away from the viewer, as they won't be visible in the final rendering to achieve standard optimization.). <br>
 
 <h2>Pseudocode</h2>
-<br>
 <p>
 function VisualizeWallPanel(environmentMesh, selectedPanel)
 
-  // Step 1: Identify Walls 
+   Step 1: Identify Walls 
   wallPlanes = DetectPlanes(environmentMesh)
 
-  // Step 2: Segment Walls
+   Step 2: Segment Walls
   segmentedWalls = SegmentWalls(wallPlanes, environmentMesh)
 
-  // Step 3: Apply Wall Panel Texture
+   Step 3: Apply Wall Panel Texture
   for each wallPlane in segmentedWalls:
       RegisterTexture(selectedPanel, wallPlane)
       CullInvisibleRegions(wallPlane)
 
-  // Step 4: Render Augmented View
+   Step 4: Render Augmented View
   RenderEnvironment(environmentMesh, segmentedWalls)
 
 </p>
+
+<h2>Conclusion</h2>
+The proposed WallCraft application, powered by the Meta Quest SDK, offers a promising solution for revolutionizing Urban Company's wall panel selection process.
+<br>
+This TRD has outlined the key functionalities, technical approach, and development breakdown for WallCraft. The core functionalities include:
+<br>
+Environment Understanding: Identifying vertical walls (planes) and optionally segmenting them from other objects within the user's environment.<br>
+Wall Panel Selection: Providing a user-friendly UI for browsing, selecting, and potentially customizing wall panels.<br>
+Augmented Visualization: Employing image registration and culling algorithms to accurately map the chosen wall panel texture onto the detected wall planes, creating a realistic augmented view.<br>
+<br>
+WallCraft empowers customers to visualize various wall panel designs directly on their existing walls, enhancing the decision-making process and fostering a more immersive customer experience.<br>
+The modular breakdown of functionalities ensures efficient development and facilitates future additions of functionalities or wall panel designs.
+

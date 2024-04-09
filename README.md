@@ -1,15 +1,19 @@
-Technical Requirement Document
-WallCraft Meta Quest Application
-Objective
-Create an application which can detect walls.
-Allow users to select a wall panel from a list of wall panel designs and superimpose it over the vertical walls excluding other objects in the room.
-Assumptions
-Users will possess a Meta Quest headset compatible with the application.
-Users have a basic understanding of how to operate the Meta Quest controllers. 
-A stable internet connection is available for potential online functionality
-Constraints
-The application's initial focus will be on vertical wall surfaces, excluding floors, ceilings, and slanted surfaces. 
-The initial range of wall panel designs will be limited based on data storage and processing considerations.
+_**#Technical Requirement Document**_
+
+**###WallCraft Meta Quest Application**
+
+**##Objective**
+1. Create an application which can detect walls.
+2. Allow users to select a wall panel from a list of wall panel designs and superimpose it over the vertical walls excluding other objects in the room.
+
+**##Assumptions**
+1. Users will possess a Meta Quest headset compatible with the application.
+2. Users have a basic understanding of how to operate the Meta Quest controllers. 
+3. A stable internet connection is available for potential online functionality
+
+**##Constraints**
+1. The application's initial focus will be on vertical wall surfaces, excluding floors, ceilings, and slanted surfaces. 
+2. The initial range of wall panel designs will be limited based on data storage and processing considerations.
 Focus
 Environment Scanning and Plane Detection.
 Wall Segmentation and Object Exclusion.
